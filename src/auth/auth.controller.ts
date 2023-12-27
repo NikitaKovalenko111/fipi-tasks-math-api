@@ -30,7 +30,7 @@ export class AuthController {
                 maxAge: 45 * 24 * 60 * 60 * 1000,
                 httpOnly: true,
                 secure: true,
-                sameSite: false,
+                sameSite: 'none',
                 domain: 'fipimath.netlify.app',
             })
 
