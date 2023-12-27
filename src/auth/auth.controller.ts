@@ -29,6 +29,8 @@ export class AuthController {
             res.cookie('refreshToken', data.tokens.refreshToken, {
                 maxAge: 45 * 24 * 60 * 60 * 1000,
                 httpOnly: true,
+                secure: true,
+                sameSite: false,
             })
 
             return data
