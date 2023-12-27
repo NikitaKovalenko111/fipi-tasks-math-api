@@ -31,6 +31,7 @@ export class AuthController {
                 httpOnly: true,
                 secure: true,
                 sameSite: false,
+                domain: 'fipimath.netlify.app',
             })
 
             return data
